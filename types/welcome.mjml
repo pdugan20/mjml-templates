@@ -1,0 +1,9 @@
+<mj-text css-class="body_text">
+    Hi {{name}},<br>Welcome to Hikearound!
+</mj-text>
+<mj-button
+    css-class="action_button"
+    href="https://tryhikearound.com/verify?token={{token}}"
+>
+    Confirm your email address
+</mj-button>

@@ -1,0 +1,15 @@
+<mj-head>
+    <mj-include path="../style/style.mjml" />
+    <mj-attributes>
+        <mj-all
+            font-family="-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+        />
+        <mj-text
+            font-weight="400"
+            font-size="15px"
+            color="#333333"
+            line-height="1.4"
+        />
+        <mj-body css-class="email_body" width="600px">
+    </mj-attributes>
+</mj-head>
