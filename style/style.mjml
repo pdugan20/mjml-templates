@@ -72,6 +72,9 @@
         }
     }
     @media (prefers-color-scheme:dark) {
+        body {
+            background-color: #000;
+        }
         .email_body {
             background-color: #000;
         }
@@ -87,6 +90,11 @@
         }
         .footer_text div a {
             color: #FFF !important;
+        }
+        @media (max-width:480px) {
+            .email_section {
+                background-color: #000;
+            }
         }
     }
 </mj-style>
