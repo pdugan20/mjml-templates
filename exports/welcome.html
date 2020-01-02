@@ -97,9 +97,15 @@
       text-decoration: underline;
     }
 
-    .footer_text a {
-      color: #999999;
+    .footer_text div {
+      color: #999 !important;
+      font-size: 12px !important;
+      line-height: 1.4 !important;
+    }
+
+    .footer_text div a {
       text-decoration: underline;
+      color: #999 !important;
     }
 
     .email_body {
@@ -165,6 +171,29 @@
         padding: 10px 0 !important;
       }
     }
+
+    @media (prefers-color-scheme:dark) {
+      .email_body {
+        background-color: #000;
+      }
+
+      .email_section {
+        background-color: #333;
+        border-color: #222;
+      }
+
+      .body_text div {
+        color: #FFF !important;
+      }
+
+      .footer_text div {
+        color: #FFF !important;
+      }
+
+      .footer_text div a {
+        color: #FFF !important;
+      }
+    }
   </style>
 </head>
 
@@ -200,7 +229,7 @@
                           <tr>
                             <td style="width:45px;">
                               <a href="https://tryhikearound.com" target="_blank">
-                                <img height="auto" src="https://tryhikearound.com/images/email/logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="45" />
+                                <img height="auto" src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/images%2Femail%2Flogo.png?alt=media&token=dbb63e06-1003-4fa7-8152-360a0008cd06" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="45" />
                               </a>
                             </td>
                           </tr>
@@ -226,7 +255,7 @@
                   </tr>
                   <tr>
                     <td align="left" class="footer_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:12px;font-weight:400;line-height:1.4;text-align:left;color:#999999;">This email was sent by Hikearound (542 Brannan St, San Francisco, CA 94107). To stop receiving these emails, <a class="text-link" href="unsubscribeLink">Unsubscribe</a>.</div>
+                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">This email was sent by Hikearound (542 Brannan St, San Francisco, CA 94107). To stop receiving these emails, <a class="text-link" href="unsubscribeLink">Unsubscribe</a>.</div>
                     </td>
                   </tr>
                 </table>

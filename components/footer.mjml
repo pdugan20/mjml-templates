@@ -1,8 +1,3 @@
-<mj-text
-    css-class="footer_text"
-    color="#999999"
-    font-size="12px"
-    line-height="1.4"
->
+<mj-text css-class="footer_text">
     This email was sent by Hikearound (542 Brannan St, San Francisco, CA 94107). To stop receiving these emails, <a class="text-link" href="unsubscribeLink">Unsubscribe</a>.
 </mj-text>

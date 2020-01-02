@@ -12,9 +12,14 @@
     a:hover {
         text-decoration: underline;
     }
-    .footer_text a {
-        color: #999999;
+    .footer_text div {
+        color: #999 !important;
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+    }
+    .footer_text div a {
         text-decoration: underline;
+        color: #999 !important;
     }
     .email_body {
         padding: 15px 0;
@@ -64,6 +69,24 @@
         }
         .footer_text, .body_text {
             padding: 10px 0 !important;
+        }
+    }
+    @media (prefers-color-scheme:dark) {
+        .email_body {
+            background-color: #000;
+        }
+        .email_section {
+            background-color: #333;
+            border-color: #222;
+        }
+        .body_text div {
+            color: #FFF !important;
+        }
+        .footer_text div {
+            color: #FFF !important;
+        }
+        .footer_text div a {
+            color: #FFF !important;
         }
     }
 </mj-style>
