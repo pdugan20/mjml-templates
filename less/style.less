@@ -1,0 +1,132 @@
+@import 'variables';
+
+a {
+    color: @color_purple_dark;
+    text-decoration: none;
+}
+
+body {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer_text {
+    div {
+        color: @color_gray !important;
+        font-size: @font_size_tiny !important;
+        line-height: @lh_14 !important;
+
+        a {
+            text-decoration: underline;
+            color: @color_gray !important;
+        }
+    }
+}
+
+.email_body {
+    padding: @space_small 0;
+    background-color: @color_gray_light;
+}
+
+.email_section {
+    padding: @space_micro;
+    margin: @space_tiny auto !important;
+    border: 1px solid @color_gray_ultralight;
+    border-radius: @border_radius;
+    background-color: @color_white;
+}
+
+.action_button {
+    table {
+        width: 100%;
+    }
+
+    a {
+        display: block !important;
+        background: initial !important;
+        color: @color_white !important;
+        font-size: @font_size_regular !important;
+        font-weight: @font_weight_regular !important;
+        line-height: @lh_13 !important;
+
+        &:hover {
+            background: @color_purple_dark !important;
+        }
+    }
+
+    td {
+        background: @color_purple !important;
+        border: 1px solid @color_purple_dark !important;
+
+        &:hover {
+            background: @color_purple_dark !important;
+        }
+    }
+}
+
+@media (max-width: @mobile_breakpoint) {
+    .email_body,
+    .email_wrapper {
+        padding: 0 !important;
+        background-color: @color_white;
+    }
+
+    .email_section {
+        padding: 0;
+        margin: 0 auto !important;
+        border-radius: 0;
+        border: none;
+    }
+
+    .action_button {
+        padding: @space_micro 0 !important;
+    }
+
+    .footer_text,
+    .body_text {
+        padding: @space_tiny 0 !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: @color_gray_dark;
+    }
+
+    .email_body {
+        background-color: @color_gray_dark;
+    }
+
+    .email_section {
+        background-color: @color_gray_medium;
+        border-color: @color_gray_border;
+    }
+
+    .body_text {
+        div {
+            color: @color_white !important;
+        }
+    }
+
+    .footer_text {
+        div {
+            color: @color_white !important;
+
+            a {
+                color: @color_white !important;
+            }
+        }
+    }
+
+    @media (max-width: @mobile_breakpoint) {
+        .email_section {
+            background-color: @color_gray_dark;
+        }
+    }
+}
