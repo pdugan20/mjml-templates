@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <mj-column width="100%">
     <mj-image
         width="45px"
@@ -5,3 +6,10 @@
         href="https://www.tryhikearound.com"
     />
 </mj-column>
+=======
+<mj-image
+    width="125px"
+    src="https://firebasestorage.googleapis.com/v0/b/pat-and-mel.appspot.com/o/images%2Femail-header.png?alt=media&token=c09b63b6-8b03-415a-96f0-f185602955f6"
+    href="https://patandmelanie.com"
+/>
+>>>>>>> Base commit for wedding
