@@ -1,0 +1,31 @@
+<mj-column width="100%">
+    <mj-text css-class="body_text">
+        Hi {{name}},<br>Here are some hikes we recently added that we think you might enjoy.
+    </mj-text>
+</mj-column>
+<mj-column width="100%" css-class="heading">
+    <mj-text css-class="heading_text">
+        Hikes
+    </mj-text>
+</mj-column>
+<mj-column width="100%" css-class="hike_info">
+    <mj-text css-class="hike_info_text">
+        <span class="info_text_highlight">{{hike_name}}</span> is a hike located in <span class="info_text_highlight">{{hike_location}}</span>. It's a {{hike_distance}}m {{hike_route}} with a net elevation gain of {{hike_elevation}}ft.
+        <p>{{hike_description}}</p>
+    </mj-text>
+</mj-column>
+<mj-column width="100%">
+    <mj-image
+        css-class="map"
+        src="{{hike_map_url}}"
+        href="https://www.tryhikearound.com/hike/{{hid}}"
+    />
+</mj-column>
+<mj-column width="100%">
+    <mj-button
+        css-class="action_button"
+        href="https://www.tryhikearound.com/hike/{{hid}}"
+    >
+        View hike
+    </mj-button>
+</mj-column>

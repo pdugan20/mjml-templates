@@ -70,6 +70,34 @@ a:hover {
     }
 }
 
+.map {
+    padding: 0 @space_large @space_micro @space_large !important;
+
+    img {
+        border: 1px solid @color_gray_ultralight !important;
+        border-radius: @border_radius;
+        box-sizing: border-box;
+        max-height: 275px !important;
+    }
+}
+
+.heading_text {
+    div {
+        border-bottom: 1px solid @color_gray_ultralight;
+        text-transform: uppercase;
+        font-size: @font_size_tiny !important;
+        font-weight: @font_weight_regular !important;
+    }
+}
+
+.hike_info_text {
+    padding-top: 0 !important;
+}
+
+.info_text_highlight {
+    text-decoration: underline;
+}
+
 @media (max-width: @mobile_breakpoint) {
     .email_body,
     .email_wrapper {
@@ -92,6 +120,15 @@ a:hover {
     .body_text {
         padding: @space_tiny 0 !important;
     }
+
+    .map,
+    .hike_info_text {
+        padding: 0 0 @space_micro 0 !important;
+    }
+
+    .heading_text {
+        padding: 0 0 @space_tiny 0 !important;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -108,12 +145,9 @@ a:hover {
         border-color: @color_gray_border;
     }
 
-    .body_text {
-        div {
-            color: @color_white !important;
-        }
-    }
-
+    .body_text,
+    .heading_text,
+    .hike_info_text,
     .footer_text {
         div {
             color: @color_white !important;

@@ -2,11 +2,9 @@
     <mj-include path="./components/header.mjml" />
     <mj-body>
         <mj-section css-class="email_section">
-            <mj-column width="100%">
-                <mj-include path="./components/logo.mjml" />
-                <mj-include path="./types/welcome.mjml" />
-                <mj-include path="./components/footer.mjml" />
-            </mj-column>
+            <mj-include path="./components/logo.mjml" />
+            <mj-include path="./types/digest.mjml" />
+            <mj-include path="./components/footer.mjml" />
         </mj-section>
     </mj-body>
 </mjml>

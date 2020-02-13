@@ -1,5 +1,7 @@
-<mj-image
-    width="45px"
-    src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/images%2Femail%2Flogo.png?alt=media&token=dbb63e06-1003-4fa7-8152-360a0008cd06"
-    href="https://tryhikearound.com"
-/>
+<mj-column width="100%">
+    <mj-image
+        width="45px"
+        src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/images%2Femail%2Flogo.png?alt=media&token=dbb63e06-1003-4fa7-8152-360a0008cd06"
+        href="https://tryhikearound.com"
+    />
+</mj-column>
