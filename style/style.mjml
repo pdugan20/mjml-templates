@@ -80,6 +80,9 @@ a:hover {
     padding: 0 !important;
     background-color: #FFFFFF;
   }
+  .email_body {
+    padding: 0 10px !important;
+  }
   .email_section {
     padding: 0;
     margin: 0 auto !important;
