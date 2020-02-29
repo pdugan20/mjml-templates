@@ -10,7 +10,11 @@ body {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    background-color: @color_gray_light !important;
+}
+
+body,
+.email_body {
+    background-color: @color_gray_light;
 }
 
 a:hover {
@@ -99,7 +103,8 @@ a:hover {
 }
 
 @media (max-width: @mobile_breakpoint) {
-    body {
+    body,
+    .email_body {
         background-color: @color_white;
     }
 
@@ -139,7 +144,8 @@ a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
+    body,
+    .email_body {
         background-color: @color_gray_dark;
     }
 
