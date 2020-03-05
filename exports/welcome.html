@@ -93,8 +93,17 @@
       padding: 0 !important;
     }
 
+    body,
+    .email_body {
+      background-color: #F8F8F8;
+    }
+
     a:hover {
       text-decoration: underline;
+    }
+
+    .signature {
+      margin-top: 10px;
     }
 
     .footer_text div {
@@ -110,7 +119,6 @@
 
     .email_body {
       padding: 15px 0;
-      background-color: #F8F8F8;
     }
 
     .email_section {
@@ -175,10 +183,14 @@
 
     @media (max-width: 480px) {
 
+      body,
+      .email_body {
+        background-color: #FFFFFF;
+      }
+
       .email_body,
       .email_wrapper {
         padding: 0 !important;
-        background-color: #FFFFFF;
       }
 
       .email_body {
@@ -212,10 +224,8 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #1C1C1E;
-      }
 
+      body,
       .email_body {
         background-color: #1C1C1E;
       }
@@ -301,7 +311,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="left" class="body_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">Hi {{name}},<br>Welcome to Hikearound!</div>
+                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">Hi {{name}},<br>We're stoked you decided to join Hikearound! Please verify your email address so that each week we can send you the best new hikes we think you'll enjoy. <div class="signature">Thanks,</div> The Hikearound Team</div>
                     </td>
                   </tr>
                   <tr>
@@ -309,7 +319,7 @@
                       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                         <tr>
                           <td align="center" bgcolor="#414141" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 25px;background:#414141;" valign="middle">
-                            <a href="https://www.tryhikearound.com/verify?token={{token}}" style="display:inline-block;background:#414141;color:#ffffff;font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> Confirm your email address </a>
+                            <a href="https://www.tryhikearound.com/verify?uid={{uid}}&idToken={{idToken}}" style="display:inline-block;background:#414141;color:#ffffff;font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> Confirm your email address </a>
                           </td>
                         </tr>
                       </table>

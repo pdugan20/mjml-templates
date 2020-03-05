@@ -9,8 +9,15 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+body,
+.email_body {
+  background-color: #F8F8F8;
+}
 a:hover {
   text-decoration: underline;
+}
+.signature {
+  margin-top: 10px;
 }
 .footer_text div {
   color: #999999 !important;
@@ -23,7 +30,6 @@ a:hover {
 }
 .email_body {
   padding: 15px 0;
-  background-color: #F8F8F8;
 }
 .email_section {
   padding: 5px;
@@ -75,10 +81,13 @@ a:hover {
   text-decoration: underline;
 }
 @media (max-width: 480px) {
+  body,
+  .email_body {
+    background-color: #FFFFFF;
+  }
   .email_body,
   .email_wrapper {
     padding: 0 !important;
-    background-color: #FFFFFF;
   }
   .email_body {
     padding: 0 10px !important;
@@ -105,9 +114,7 @@ a:hover {
   }
 }
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1C1C1E;
-  }
+  body,
   .email_body {
     background-color: #1C1C1E;
   }
