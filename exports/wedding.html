@@ -93,9 +93,18 @@
       padding: 0 !important;
     }
 
+    body,
+    .email_body {
+      background-color: #F8F8F8;
+    }
+
     a:hover {
       text-decoration: underline;
       color: #6225D6 !important;
+    }
+
+    .signature {
+      margin-top: 10px;
     }
 
     .footer_text div {
@@ -111,7 +120,6 @@
 
     .email_body {
       padding: 15px 0;
-      background-color: #F8F8F8;
     }
 
     .email_section {
@@ -148,12 +156,46 @@
       background: #3B079F !important;
     }
 
+    .map {
+      padding: 0 25px 5px 25px !important;
+    }
+
+    .map img {
+      border: 1px solid #EEEEEE !important;
+      border-radius: 6px;
+      box-sizing: border-box;
+      max-height: 275px !important;
+    }
+
+    .heading_text div {
+      border-bottom: 1px solid #EEEEEE;
+      text-transform: uppercase;
+      font-size: 12px !important;
+      font-weight: 500 !important;
+    }
+
+    .hike_info_text {
+      padding-top: 0 !important;
+    }
+
+    .info_text_highlight {
+      text-decoration: underline;
+    }
+
     @media (max-width: 480px) {
+
+      body,
+      .email_body {
+        background-color: #FFFFFF;
+      }
 
       .email_body,
       .email_wrapper {
         padding: 0 !important;
-        background-color: #FFFFFF;
+      }
+
+      .email_body {
+        padding: 0 10px !important;
       }
 
       .email_section {
@@ -171,13 +213,20 @@
       .body_text {
         padding: 10px 0 !important;
       }
+
+      .map,
+      .hike_info_text {
+        padding: 0 0 5px 0 !important;
+      }
+
+      .heading_text {
+        padding: 0 0 10px 0 !important;
+      }
     }
 
     @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #1C1C1E;
-      }
 
+      body,
       .email_body {
         background-color: #1C1C1E;
       }
@@ -187,14 +236,16 @@
         border-color: #545458;
       }
 
-      .body_text div {
-        color: #FFFFFF !important;
-      }
-
+      .body_text div,
+      .heading_text div,
+      .hike_info_text div,
       .footer_text div {
         color: #FFFFFF !important;
       }
 
+      .body_text div a,
+      .heading_text div a,
+      .hike_info_text div a,
       .footer_text div a {
         color: #FFFFFF !important;
       }
@@ -239,7 +290,7 @@
                         <tbody>
                           <tr>
                             <td style="width:125px;">
-                              <a href="https://patandmelanie.com" target="_blank">
+                              <a href="https://www.patandmelanie.com" target="_blank">
                                 <img height="auto" src="https://firebasestorage.googleapis.com/v0/b/pat-and-mel.appspot.com/o/images%2Femail-header.png?alt=media&token=c09b63b6-8b03-415a-96f0-f185602955f6" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="125" />
                               </a>
                             </td>
@@ -248,9 +299,20 @@
                       </table>
                     </td>
                   </tr>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="left" class="body_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">Melanie and Pat are super excited to invite you to join us for our wedding which will take place at 5:00pm on Saturday, June 13, 2020 at the <a href="https://innsofaurora.com">Aurora Inn</a> in Aurora, NY.<br><br>Expect to see a formal invitation from us soon and in the meantime, check out our website where we will continue to add details as they become available.</div>
+                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">Friends & family,<br>We hope this email finds you healthy and sheltering-in-place safely!<br><br>Out of an abundance of caution for everyone’s health, we have choosen to postpone our wedding reception until Saturday, June 12th, 2021.<br><br>Expect to see an updated invitation from us later this year and we cannot wait to celebrate with you all.<br><br>If you booked a room at the Inns of Aurora, your reservation will be automatically canceled and refunded.<br><br>Stay healthy and stay safe.<br><br>Love,<br>Mel & Pat</div>
                     </td>
                   </tr>
                   <tr>
@@ -258,12 +320,23 @@
                       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                         <tr>
                           <td align="center" bgcolor="#414141" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 25px;background:#414141;" valign="middle">
-                            <a href="https://patandmelanie.com" style="display:inline-block;background:#414141;color:#ffffff;font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> Visit our website </a>
+                            <a href="https://www.patandmelanie.com" style="display:inline-block;background:#414141;color:#ffffff;font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;" target="_blank"> Visit our website </a>
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="left" class="footer_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">Sent from 542 Brannan St, Apt 214, San Francisco, CA 94107. To stop receiving emails about our wedding like a jerk, <a class="text-link" href="{{{unsubscribe}}}">Unsubscribe</a>.</div>

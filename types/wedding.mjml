@@ -1,10 +1,10 @@
 <mj-column width="100%">
     <mj-text css-class="body_text">
-        Melanie and Pat are super excited to invite you to join us for our wedding which will take place at 5:00pm on Saturday, June 13, 2020 at the <a href="https://innsofaurora.com">Aurora Inn</a> in Aurora, NY.<br><br>Expect to see a formal invitation from us soon and in the meantime, check out our website where we will continue to add details as they become available.
+        Friends & family,<br>We hope this email finds you healthy and sheltering-in-place safely!<br><br>Out of an abundance of caution for everyone’s health, we have choosen to postpone our wedding reception until Saturday, June 12th, 2021.<br><br>Expect to see an updated invitation from us later this year and we cannot wait to celebrate with you all.<br><br>If you booked a room at the Inns of Aurora, your reservation will be automatically canceled and refunded.<br><br>Stay healthy and stay safe.<br><br>Love,<br>Mel & Pat
     </mj-text>
     <mj-button
         css-class="action_button"
-        href="https://patandmelanie.com"
+        href="https://www.patandmelanie.com"
     >
         Visit our website
     </mj-button>
