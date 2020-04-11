@@ -1,9 +1,11 @@
-<mj-text css-class="body_text">
-    Melanie and Pat are super excited to invite you to join us for our wedding which will take place at 5:00pm on Saturday, June 13, 2020 at the <a href="https://innsofaurora.com">Aurora Inn</a> in Aurora, NY.<br><br>Expect to see a formal invitation from us soon and in the meantime, check out our website where we will continue to add details as they become available.
-</mj-text>
-<mj-button
-    css-class="action_button"
-    href="https://patandmelanie.com"
->
-    Visit our website
-</mj-button>
+<mj-column width="100%">
+    <mj-text css-class="body_text">
+        Melanie and Pat are super excited to invite you to join us for our wedding which will take place at 5:00pm on Saturday, June 13, 2020 at the <a href="https://innsofaurora.com">Aurora Inn</a> in Aurora, NY.<br><br>Expect to see a formal invitation from us soon and in the meantime, check out our website where we will continue to add details as they become available.
+    </mj-text>
+    <mj-button
+        css-class="action_button"
+        href="https://patandmelanie.com"
+    >
+        Visit our website
+    </mj-button>
+</mj-column>

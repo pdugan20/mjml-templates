@@ -1,15 +1,7 @@
-<<<<<<< HEAD
 <mj-column width="100%">
     <mj-image
-        width="45px"
-        src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/images%2Femail%2Flogo.png?alt=media&token=dbb63e06-1003-4fa7-8152-360a0008cd06"
-        href="https://www.tryhikearound.com"
+        width="125px"
+        src="https://firebasestorage.googleapis.com/v0/b/pat-and-mel.appspot.com/o/images%2Femail-header.png?alt=media&token=c09b63b6-8b03-415a-96f0-f185602955f6"
+        href="https://patandmelanie.com"
     />
 </mj-column>
-=======
-<mj-image
-    width="125px"
-    src="https://firebasestorage.googleapis.com/v0/b/pat-and-mel.appspot.com/o/images%2Femail-header.png?alt=media&token=c09b63b6-8b03-415a-96f0-f185602955f6"
-    href="https://patandmelanie.com"
-/>
->>>>>>> Base commit for wedding
