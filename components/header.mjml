@@ -4,6 +4,7 @@
         <mj-all
             font-family="-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
         />
+        <mj-preview>{{preview}}</mj-preview>
         <mj-text
             font-weight="400"
             font-size="15px"
