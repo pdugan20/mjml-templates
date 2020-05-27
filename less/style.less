@@ -92,6 +92,10 @@ a:hover {
         box-sizing: border-box;
         max-height: 275px !important;
     }
+
+    &.dark {
+        display: none;
+    }
 }
 
 .heading_text {
@@ -169,6 +173,16 @@ a:hover {
             a {
                 color: @color_white !important;
             }
+        }
+    }
+
+    .map {
+        &.dark {
+            display: block;
+        }
+
+        &.light {
+            display: none;
         }
     }
 

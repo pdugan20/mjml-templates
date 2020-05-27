@@ -98,6 +98,12 @@
       background-color: #F8F8F8;
     }
 
+    body a,
+    .email_body a {
+      color: #7028FF;
+      text-decoration: none;
+    }
+
     a:hover {
       text-decoration: underline;
     }
@@ -166,6 +172,10 @@
       max-height: 275px !important;
     }
 
+    .map.dark {
+      display: none;
+    }
+
     .heading_text div {
       border-bottom: 1px solid #EEEEEE;
       text-transform: uppercase;
@@ -175,10 +185,6 @@
 
     .hike_info_text {
       padding-top: 0 !important;
-    }
-
-    .info_text_highlight {
-      text-decoration: underline;
     }
 
     @media (max-width: 480px) {
@@ -247,6 +253,14 @@
       .hike_info_text div a,
       .footer_text div a {
         color: #FFFFFF !important;
+      }
+
+      .map.dark {
+        display: block;
+      }
+
+      .map.light {
+        display: none;
       }
     }
 
@@ -343,7 +357,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="left" class="hike_info_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;"><span class="info_text_highlight">{{hikeName}}</span> is a hike located in <span class="info_text_highlight">{{hikeCity}}</span>. It's a {{hikeDistance}} mile {{hikeRoute}} with a net elevation gain of {{hikeElevation}} feet. <p>{{hikeDescription}} <a href="https://www.tryhikearound.com/hike/{{hid}}">Continue reading</a></p>
+                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;"><a href="https://www.tryhikearound.com/hike/{{hid}}">{{hikeName}}</a> is a hike located in {{hikeCity}}. It's a {{hikeDistance}} mile {{hikeRoute}} with a net elevation gain of {{hikeElevation}} feet. <p>{{hikeDescription}} <a href="https://www.tryhikearound.com/hike/{{hid}}">Continue reading</a></p>
                       </div>
                     </td>
                   </tr>
@@ -359,13 +373,28 @@
               <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
-                    <td align="center" class="map" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                    <td align="center" class="map light" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                         <tbody>
                           <tr>
                             <td style="width:550px;">
                               <a href="https://www.tryhikearound.com/hike/{{hid}}" target="_blank">
-                                <img height="auto" src="{{hikeMapUrl}}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
+                                <img height="auto" src="{{lightMap}}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="map dark" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                        <tbody>
+                          <tr>
+                            <td style="width:550px;">
+                              <a href="https://www.tryhikearound.com/hike/{{hid}}" target="_blank">
+                                <img height="auto" src="{{darkMap}}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
                               </a>
                             </td>
                           </tr>

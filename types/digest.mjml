@@ -16,8 +16,13 @@
 </mj-column>
 <mj-column width="100%">
     <mj-image
-        css-class="map"
-        src="{{hikeMapUrl}}"
+        css-class="map light"
+        src="{{lightMap}}"
+        href="https://www.tryhikearound.com/hike/{{hid}}"
+    />
+    <mj-image
+        css-class="map dark"
+        src="{{darkMap}}"
         href="https://www.tryhikearound.com/hike/{{hid}}"
     />
 </mj-column>
