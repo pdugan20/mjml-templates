@@ -10,7 +10,7 @@
 </mj-column>
 <mj-column width="100%" css-class="hike_info">
     <mj-text css-class="hike_info_text">
-        <span class="info_text_highlight">{{hikeName}}</span> is a hike located in <span class="info_text_highlight">{{hikeCity}}</span>. It's a {{hikeDistance}} mile {{hikeRoute}} with a net elevation gain of {{hikeElevation}} feet.
+        <a href="https://www.tryhikearound.com/hike/{{hid}}">{{hikeName}}</a> is a hike located in {{hikeCity}}. It's a {{hikeDistance}} mile {{hikeRoute}} with a net elevation gain of {{hikeElevation}} feet.
         <p>{{hikeDescription}} <a href="https://www.tryhikearound.com/hike/{{hid}}">Continue reading</a></p>
     </mj-text>
 </mj-column>

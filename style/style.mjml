@@ -13,6 +13,11 @@ body,
 .email_body {
   background-color: #F8F8F8;
 }
+body a,
+.email_body a {
+  color: #7028FF;
+  text-decoration: none;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -76,9 +81,6 @@ a:hover {
 }
 .hike_info_text {
   padding-top: 0 !important;
-}
-.info_text_highlight {
-  text-decoration: underline;
 }
 @media (max-width: 480px) {
   body,
