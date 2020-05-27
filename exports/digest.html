@@ -93,8 +93,17 @@
       padding: 0 !important;
     }
 
+    body,
+    .email_body {
+      background-color: #F8F8F8;
+    }
+
     a:hover {
       text-decoration: underline;
+    }
+
+    .signature {
+      margin-top: 10px;
     }
 
     .footer_text div {
@@ -110,7 +119,6 @@
 
     .email_body {
       padding: 15px 0;
-      background-color: #F8F8F8;
     }
 
     .email_section {
@@ -175,10 +183,14 @@
 
     @media (max-width: 480px) {
 
+      body,
+      .email_body {
+        background-color: #FFFFFF;
+      }
+
       .email_body,
       .email_wrapper {
         padding: 0 !important;
-        background-color: #FFFFFF;
       }
 
       .email_body {
@@ -212,10 +224,8 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #1C1C1E;
-      }
 
+      body,
       .email_body {
         background-color: #1C1C1E;
       }
@@ -333,7 +343,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="left" class="hike_info_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;"><span class="info_text_highlight">{{hike_name}}</span> is a hike located in <span class="info_text_highlight">{{hike_location}}</span>. It's a {{hike_distance}}m {{hike_route}} with a net elevation gain of {{hike_elevation}}ft. <p>{{hike_description}}</p>
+                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;"><span class="info_text_highlight">{{hikeName}}</span> is a hike located in <span class="info_text_highlight">{{hikeCity}}</span>. It's a {{hikeDistance}} mile {{hikeRoute}} with a net elevation gain of {{hikeElevation}} feet. <p>{{hikeDescription}} <a href="https://www.tryhikearound.com/hike/{{hid}}">Continue reading</a></p>
                       </div>
                     </td>
                   </tr>
@@ -355,7 +365,7 @@
                           <tr>
                             <td style="width:550px;">
                               <a href="https://www.tryhikearound.com/hike/{{hid}}" target="_blank">
-                                <img height="auto" src="{{hike_map_url}}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
+                                <img height="auto" src="{{hikeMapUrl}}" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
                               </a>
                             </td>
                           </tr>
