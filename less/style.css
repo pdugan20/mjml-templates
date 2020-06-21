@@ -68,7 +68,7 @@ a:hover {
 }
 .map img {
   border: 1px solid #EEEEEE !important;
-  border-radius: 6px;
+  border-radius: 3px;
   box-sizing: border-box;
   max-height: 275px !important;
 }
