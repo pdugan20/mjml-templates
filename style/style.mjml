@@ -128,16 +128,21 @@ a:hover {
     border-color: #545458;
   }
   .body_text div,
-  .heading_text div,
   .hike_info_text div,
   .footer_text div {
     color: #FFFFFF !important;
   }
   .body_text div a,
-  .heading_text div a,
   .hike_info_text div a,
   .footer_text div a {
     color: #FFFFFF !important;
+  }
+  .heading_text div {
+    border-bottom: 1px solid #545458;
+    color: #9C9C9C !important;
+  }
+  .map img {
+    border: 1px solid #545458 !important;
   }
   .map.dark {
     display: block;
