@@ -1,0 +1,157 @@
+a {
+  color: #7028FF;
+  text-decoration: none;
+}
+body {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body,
+.email_body {
+  background-color: #F8F8F8;
+}
+body a,
+.email_body a {
+  color: #7028FF;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.signature {
+  margin-top: 10px;
+}
+.footer_text div {
+  color: #999999 !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+.footer_text div a {
+  text-decoration: underline;
+  color: #999999 !important;
+}
+.email_body {
+  padding: 15px 0;
+}
+.email_section {
+  padding: 5px;
+  margin: 10px auto !important;
+  border: 1px solid #EEEEEE;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+}
+.action_button table {
+  width: 100%;
+}
+.action_button a {
+  display: block !important;
+  background: initial !important;
+  color: #FFFFFF !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+}
+.action_button a:hover {
+  background: #7028FF !important;
+}
+.action_button td {
+  background: #935DFF !important;
+  border: 1px solid #7028FF !important;
+}
+.action_button td:hover {
+  background: #7028FF !important;
+}
+.map {
+  padding: 0 25px 5px 25px !important;
+}
+.map img {
+  border: 1px solid #EEEEEE !important;
+  border-radius: 6px;
+  box-sizing: border-box;
+  max-height: 275px !important;
+}
+.map.dark {
+  display: none;
+}
+.heading_text div {
+  border-bottom: 1px solid #EEEEEE;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+.hike_info_text {
+  padding-top: 0 !important;
+}
+@media (max-width: 480px) {
+  body,
+  .email_body {
+    background-color: #FFFFFF;
+  }
+  .email_body,
+  .email_wrapper {
+    padding: 0 !important;
+  }
+  .email_body {
+    padding: 0 10px !important;
+  }
+  .email_section {
+    padding: 0;
+    margin: 0 auto !important;
+    border-radius: 0;
+    border: none;
+  }
+  .action_button {
+    padding: 5px 0 !important;
+  }
+  .footer_text,
+  .body_text {
+    padding: 10px 0 !important;
+  }
+  .map,
+  .hike_info_text {
+    padding: 0 0 5px 0 !important;
+  }
+  .heading_text {
+    padding: 0 0 10px 0 !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body,
+  .email_body {
+    background-color: #1C1C1E;
+  }
+  .email_section {
+    background-color: #2C2C2E;
+    border-color: #545458;
+  }
+  .body_text div,
+  .hike_info_text div,
+  .footer_text div {
+    color: #FFFFFF !important;
+  }
+  .body_text div a,
+  .hike_info_text div a,
+  .footer_text div a {
+    color: #FFFFFF !important;
+  }
+  .heading_text div {
+    border-bottom: 1px solid #272729;
+    color: #9C9C9C !important;
+  }
+  .map img {
+    border: 1px solid #272729 !important;
+  }
+  .map.dark {
+    display: block;
+  }
+  .map.light {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) and (max-width: 480px) {
+  .email_section {
+    background-color: #1C1C1E;
+  }
+}

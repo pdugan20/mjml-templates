@@ -164,7 +164,6 @@ a:hover {
     }
 
     .body_text,
-    .heading_text,
     .hike_info_text,
     .footer_text {
         div {
@@ -176,7 +175,18 @@ a:hover {
         }
     }
 
+    .heading_text {
+        div {
+            border-bottom: 1px solid @color_dark_border;
+            color: @color_dark_header !important;
+        }
+    }
+
     .map {
+        img {
+            border: 1px solid @color_dark_border !important;
+        }
+
         &.dark {
             display: block;
         }

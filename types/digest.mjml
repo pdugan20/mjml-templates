@@ -31,6 +31,6 @@
         css-class="action_button"
         href="https://www.tryhikearound.com/hike/{{hid}}"
     >
-        View hike
+        View Hike
     </mj-button>
 </mj-column>
