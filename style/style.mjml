@@ -138,6 +138,9 @@ a:hover {
   .footer_text div a {
     color: #FFFFFF !important;
   }
+  .hike_info_text div a {
+    color: #935DFF !important;
+  }
   .heading_text div {
     border-bottom: 1px solid #545458;
     color: #9C9C9C !important;
