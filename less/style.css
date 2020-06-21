@@ -76,6 +76,7 @@ a:hover {
   display: none;
 }
 .heading_text div {
+  color: #9C9C9C !important;
   border-bottom: 1px solid #EEEEEE;
   text-transform: uppercase;
   font-size: 12px !important;
@@ -137,11 +138,11 @@ a:hover {
     color: #FFFFFF !important;
   }
   .heading_text div {
-    border-bottom: 1px solid #272729;
+    border-bottom: 1px solid #545458;
     color: #9C9C9C !important;
   }
   .map img {
-    border: 1px solid #272729 !important;
+    border: 1px solid #545458 !important;
   }
   .map.dark {
     display: block;
