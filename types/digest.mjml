@@ -1,6 +1,6 @@
 <mj-column width="100%">
     <mj-text css-class="body_text">
-        Hi {{name}},<br>Here are some hikes we recently added that we think you might enjoy.
+        Hi {{name}},<br>Here are some hikes we recently added near {{location}} that we think you'll enjoy.
     </mj-text>
 </mj-column>
 <mj-column width="100%" css-class="heading">
