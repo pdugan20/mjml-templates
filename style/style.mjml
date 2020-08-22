@@ -96,7 +96,7 @@ a:hover {
     padding: 0 !important;
   }
   .email_body {
-    padding: 0 10px !important;
+    padding: 0 15px !important;
   }
   .email_section {
     padding: 0;
