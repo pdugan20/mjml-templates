@@ -1,5 +1,5 @@
 <mj-column width="100%">
     <mj-text css-class="footer_text">
-        This email was sent by Hikearound (542 Brannan St, San Francisco, CA 94107).{{#if includeTypeUnsubscribe}} To stop receiving {{type}} emails, <a class="text-link" href="{{typeUnsubscribe}}">Click here</a>.{{/if}}  To stop receiving this and all other emails, <a class="text-link" href="{{globalUnsubscribe}}">Unsubscribe</a>.
+        This email was sent by Hikearound (542 Brannan St, San Francisco, CA 94107).{{#if includeTypeUnsubscribe}} To stop receiving {{emailType}} emails, <a class="text-link" href="{{typeUnsubscribe}}">Click here</a>.{{/if}}  To stop receiving this and all other emails, <a class="text-link" href="{{globalUnsubscribe}}">Unsubscribe</a>.
     </mj-text>
 </mj-column>

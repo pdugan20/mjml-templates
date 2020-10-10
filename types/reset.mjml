@@ -1,0 +1,16 @@
+<mj-column width="100%">
+    <mj-text css-class="body_text">
+        Hi {{name}},<br>Someone recently requested to change the password on your Hikearound account. If this was you, you can reset your password by clicking the button below.
+        <p>If you no longer want to change your password, or if you didn't request this, please ignore and delete this message.
+        <div class="signature">Thanks,</div>
+        The Hikearound Team
+    </mj-text>
+</mj-column>
+<mj-column width="100%">
+    <mj-button
+        css-class="action_button"
+        href="https://www.tryhikearound.com/reset?token={{token}}"
+    >
+        Reset Password
+    </mj-button>
+</mj-column>
