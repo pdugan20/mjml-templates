@@ -112,6 +112,52 @@ a:hover {
     padding-top: 0 !important;
 }
 
+.gallery {
+    padding: 10px 25px;
+    box-sizing: border-box;
+
+    table {
+        tr {
+            width: 183px;
+            display: inline-block;
+            overflow: hidden;
+
+            img {
+                height: 183px !important;
+                object-fit: fill;
+            }
+        }
+
+        td {
+            padding: 0 !important;
+
+            &.left {
+                border-right: 2px solid white;
+
+                img {
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                    width: 181px !important;
+                }
+            }
+
+            &.right {
+                border-left: 2px solid white;
+
+                img {
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    width: 181px !important;
+                }
+            }
+
+            img {
+                width: 33%;
+            }
+        }
+    }
+}
+
 @media (max-width: @mobile_breakpoint) {
     body,
     .email_body {
@@ -150,6 +196,53 @@ a:hover {
 
     .heading_text {
         padding: 0 0 @space_tiny 0 !important;
+    }
+
+    .gallery {
+        padding: 0;
+
+        table {
+            tr {
+                width: 100%;
+
+                img {
+                    height: 150px !important;
+                    object-fit: cover;
+                }
+            }
+
+            td {
+                padding: 2px 0 !important;
+
+                &.left {
+                    border-right: 0;
+
+                    img {
+                        border-radius: 4px;
+                        width: 100% !important;
+                    }
+                }
+
+                &.middle {
+                    img {
+                        border-radius: 4px;
+                    }
+                }
+
+                &.right {
+                    border-left: 0;
+
+                    img {
+                        border-radius: 4px;
+                        width: 100% !important;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 

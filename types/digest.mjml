@@ -5,13 +5,18 @@
 </mj-column>
 <mj-column width="100%" css-class="heading">
     <mj-text css-class="heading_text">
-        Hikes
+        Description
     </mj-text>
 </mj-column>
 <mj-column width="100%" css-class="hike_info">
     <mj-text css-class="hike_info_text">
         <a href="https://www.tryhikearound.com/hike/{{hid}}">{{hikeName}}</a> is a hike located in {{hikeCity}}. It's a {{hikeDistance}} mile {{hikeRoute}} with a net elevation gain of {{hikeElevation}} feet.
         <p>{{hikeDescription}} <a href="https://www.tryhikearound.com/hike/{{hid}}">Continue Reading</a></p>
+    </mj-text>
+</mj-column>
+<mj-column width="100%" css-class="heading">
+    <mj-text css-class="heading_text">
+        Trail Map
     </mj-text>
 </mj-column>
 <mj-column width="100%">
@@ -23,6 +28,28 @@
     <mj-image
         css-class="map dark"
         src="{{darkMap}}"
+        href="https://www.tryhikearound.com/hike/{{hid}}"
+    />
+</mj-column>
+<mj-column width="100%" css-class="heading">
+    <mj-text css-class="heading_text">
+        Gallery
+    </mj-text>
+</mj-column>
+<mj-column width="100%" css-class="gallery">
+    <mj-image
+        css-class="left"
+        src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/hikes%2F3pg1qXxCnXaMZ7Tr8Xzm%2Fimages%2Fcovers%2F0_750x750.jpg?alt=media"
+        href="https://www.tryhikearound.com/hike/{{hid}}"
+    />
+    <mj-image
+        css-class="middle"
+        src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/hikes%2F3pg1qXxCnXaMZ7Tr8Xzm%2Fimages%2Fcovers%2F1_750x750.jpg?alt=media"
+        href="https://www.tryhikearound.com/hike/{{hid}}"
+    />
+    <mj-image
+        css-class="right"
+        src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/hikes%2F3pg1qXxCnXaMZ7Tr8Xzm%2Fimages%2Fcovers%2F2_750x750.jpg?alt=media"
         href="https://www.tryhikearound.com/hike/{{hid}}"
     />
 </mj-column>

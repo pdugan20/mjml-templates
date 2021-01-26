@@ -188,6 +188,50 @@
       padding-top: 0 !important;
     }
 
+    .gallery {
+      padding: 10px 25px;
+      box-sizing: border-box;
+    }
+
+    .gallery table tr {
+      width: 183px;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .gallery table tr img {
+      height: 183px !important;
+      object-fit: fill;
+    }
+
+    .gallery table td {
+      padding: 0 !important;
+    }
+
+    .gallery table td.left {
+      border-right: 2px solid white;
+    }
+
+    .gallery table td.left img {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      width: 181px !important;
+    }
+
+    .gallery table td.right {
+      border-left: 2px solid white;
+    }
+
+    .gallery table td.right img {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      width: 181px !important;
+    }
+
+    .gallery table td img {
+      width: 33%;
+    }
+
     @media (max-width: 480px) {
 
       body,
@@ -227,6 +271,49 @@
 
       .heading_text {
         padding: 0 0 10px 0 !important;
+      }
+
+      .gallery {
+        padding: 0;
+      }
+
+      .gallery table tr {
+        width: 100%;
+      }
+
+      .gallery table tr img {
+        height: 150px !important;
+        object-fit: cover;
+      }
+
+      .gallery table td {
+        padding: 2px 0 !important;
+      }
+
+      .gallery table td.left {
+        border-right: 0;
+      }
+
+      .gallery table td.left img {
+        border-radius: 4px;
+        width: 100% !important;
+      }
+
+      .gallery table td.middle img {
+        border-radius: 4px;
+      }
+
+      .gallery table td.right {
+        border-left: 0;
+      }
+
+      .gallery table td.right img {
+        border-radius: 4px;
+        width: 100% !important;
+      }
+
+      .gallery table td img {
+        width: 100%;
       }
     }
 
@@ -353,7 +440,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="left" class="heading_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">Hikes</div>
+                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">Description</div>
                     </td>
                   </tr>
                 </table>
@@ -371,6 +458,22 @@
                     <td align="left" class="hike_info_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;"><a href="https://www.tryhikearound.com/hike/{{hid}}">{{hikeName}}</a> is a hike located in {{hikeCity}}. It's a {{hikeDistance}} mile {{hikeRoute}} with a net elevation gain of {{hikeElevation}} feet. <p>{{hikeDescription}} <a href="https://www.tryhikearound.com/hike/{{hid}}">Continue Reading</a></p>
                       </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="heading-outlook" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix heading" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tr>
+                    <td align="left" class="heading_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">Trail Map</div>
                     </td>
                   </tr>
                 </table>
@@ -420,6 +523,78 @@
             </td>
           
             <td
+               class="heading-outlook" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix heading" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tr>
+                    <td align="left" class="heading_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">Gallery</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="gallery-outlook" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix gallery" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tr>
+                    <td align="center" class="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                        <tbody>
+                          <tr>
+                            <td style="width:550px;">
+                              <a href="https://www.tryhikearound.com/hike/{{hid}}" target="_blank">
+                                <img height="auto" src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/hikes%2F3pg1qXxCnXaMZ7Tr8Xzm%2Fimages%2Fcovers%2F0_750x750.jpg?alt=media" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                        <tbody>
+                          <tr>
+                            <td style="width:550px;">
+                              <a href="https://www.tryhikearound.com/hike/{{hid}}" target="_blank">
+                                <img height="auto" src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/hikes%2F3pg1qXxCnXaMZ7Tr8Xzm%2Fimages%2Fcovers%2F1_750x750.jpg?alt=media" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" class="right" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                        <tbody>
+                          <tr>
+                            <td style="width:550px;">
+                              <a href="https://www.tryhikearound.com/hike/{{hid}}" target="_blank">
+                                <img height="auto" src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/hikes%2F3pg1qXxCnXaMZ7Tr8Xzm%2Fimages%2Fcovers%2F2_750x750.jpg?alt=media" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" />
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso | IE]>
+            </td>
+          
+            <td
                class="" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
@@ -449,7 +624,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tr>
                     <td align="left" class="footer_text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">This email was sent by Hikearound (542 Brannan St, San Francisco, CA 94107). To stop receiving these emails, <a class="text-link" href="unsubscribeLink">Unsubscribe</a>.</div>
+                      <div style="font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-size:15px;font-weight:400;line-height:1.4;text-align:left;color:#333333;">This email was sent by Hikearound (542 Brannan St, San Francisco, CA 94107).{{#if includeTypeUnsubscribe}} To stop receiving {{emailType}} emails, <a class="text-link" href="{{typeUnsubscribe}}">Click here</a>.{{/if}} To stop receiving this and all other emails, <a class="text-link" href="{{globalUnsubscribe}}">Unsubscribe</a>.</div>
                     </td>
                   </tr>
                 </table>
