@@ -1,17 +1,6 @@
 <mj-column width="100%">
     <mj-text css-class="body_text">
-        Hi {{name}},<br>Here are some hikes we recently added near {{location}} that we think you'll enjoy.
-    </mj-text>
-</mj-column>
-<mj-column width="100%" css-class="heading">
-    <mj-text css-class="heading_text">
-        Description
-    </mj-text>
-</mj-column>
-<mj-column width="100%" css-class="hike_info">
-    <mj-text css-class="hike_info_text">
-        <a href="https://www.tryhikearound.com/hike/{{hid}}">{{hikeName}}</a> is a hike located in {{hikeCity}}. It's a {{hikeDistance}} mile {{hikeRoute}} with a net elevation gain of {{hikeElevation}} feet.
-        <p>{{hikeDescription}} <a href="https://www.tryhikearound.com/hike/{{hid}}">Continue Reading</a></p>
+        Hi {{name}},<br>We recently added some hikes near {{location}} and this is one we think you might enjoy.
     </mj-text>
 </mj-column>
 <mj-column width="100%" css-class="heading">
@@ -22,14 +11,25 @@
 <mj-column width="100%">
     <mj-image
         css-class="map light"
-        src="{{lightMap}}"
+        src="{{map.light.url}}"
         href="https://www.tryhikearound.com/hike/{{hid}}"
     />
     <mj-image
         css-class="map dark"
-        src="{{darkMap}}"
+        src="{{map.dark.url}}"
         href="https://www.tryhikearound.com/hike/{{hid}}"
     />
+</mj-column>
+<mj-column width="100%" css-class="heading">
+    <mj-text css-class="heading_text">
+        Description
+    </mj-text>
+</mj-column>
+<mj-column width="100%" css-class="hike_info">
+    <mj-text css-class="hike_info_text">
+        <a href="https://www.tryhikearound.com/hike/{{hid}}">{{hike.name}}</a> is a hike located in {{hike.city}}. It's a {{hike.distance}} mile {{hike.route}} with a net elevation gain of {{hike.elevation}} feet.
+        <p>{{hike.description}} <a href="https://www.tryhikearound.com/hike/{{hid}}">Continue Reading</a></p>
+    </mj-text>
 </mj-column>
 <mj-column width="100%" css-class="heading">
     <mj-text css-class="heading_text">
@@ -39,17 +39,17 @@
 <mj-column width="100%" css-class="gallery">
     <mj-image
         css-class="left"
-        src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/hikes%2F3pg1qXxCnXaMZ7Tr8Xzm%2Fimages%2Fcovers%2F0_750x750.jpg?alt=media"
+        src="{{gallery.[0].url}}"
         href="https://www.tryhikearound.com/hike/{{hid}}"
     />
     <mj-image
         css-class="middle"
-        src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/hikes%2F3pg1qXxCnXaMZ7Tr8Xzm%2Fimages%2Fcovers%2F1_750x750.jpg?alt=media"
+        src="{{gallery.[1].url}}"
         href="https://www.tryhikearound.com/hike/{{hid}}"
     />
     <mj-image
         css-class="right"
-        src="https://firebasestorage.googleapis.com/v0/b/hikearound-14dad.appspot.com/o/hikes%2F3pg1qXxCnXaMZ7Tr8Xzm%2Fimages%2Fcovers%2F2_750x750.jpg?alt=media"
+        src="{{gallery.[2].url}}"
         href="https://www.tryhikearound.com/hike/{{hid}}"
     />
 </mj-column>
