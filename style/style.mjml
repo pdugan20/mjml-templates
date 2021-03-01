@@ -93,7 +93,7 @@ a:hover {
   padding-bottom: 0 !important;
 }
 .gallery {
-  padding: 0 25px 10px 25px;
+  padding: 0 25px 13px 25px;
   box-sizing: border-box;
 }
 .gallery table tr {
@@ -108,9 +108,6 @@ a:hover {
   border-radius: 3px;
   background-color: #EEEEEE;
   object-fit: cover;
-}
-.gallery table tr img:hover {
-  opacity: 0.8;
 }
 .gallery table td {
   padding: 0 !important;
@@ -153,7 +150,7 @@ a:hover {
     padding: 0 0 10px 0 !important;
   }
   .gallery {
-    padding: 0 0 5px 0;
+    padding: 0 0 3px 0;
   }
   .gallery table tr {
     width: 75px !important;
