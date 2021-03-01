@@ -54,6 +54,11 @@
     />
 </mj-column>
 <mj-column width="100%">
+    <mj-text css-class="body_text">
+        We hope you have a great weekend, and good luck out there! We'll have more hikes waiting for you next week.
+    </mj-text>
+</mj-column>
+<mj-column width="100%">
     <mj-button
         css-class="action_button"
         href="https://www.tryhikearound.com/hike/{{hid}}"
