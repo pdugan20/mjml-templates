@@ -102,6 +102,7 @@ a:hover {
   padding-right: 8px;
 }
 .gallery table tr img {
+  border: 1px solid #EEEEEE !important;
   height: 85px !important;
   width: 120px !important;
   border-radius: 3px;
